@@ -22,5 +22,6 @@
 1. Fresco Logic FL1100 USB 3.0 Host Controller, which AFAIK is the only chipset can be used directly in OSX, seems to have trouble with Windows 10, it crashes *host* when being activated in Windows guest VM.
     1. It could be a hardware issue or a software issue, but it seems to be working well under OSX.
     1. Also it could be some issue when re-attaching it after detaching, but stop the restart OSX VM still works.
-    1. I'll fetch a new card with same chipset to confirm.
+    1. Changed a new USB card with same chipset and the problem still exists.
+    1. Then I changed to another USB controller which is uPD720202 USB 3.0 Host Controller from Renesas Technology Corp, pciid 1912:0015, it's supported by [GenericUSBXHCI.kext](https://bitbucket.org/RehabMan/os-x-generic-usb3/downloads/), install the kext with [Kext Util](https://www.osx86.net/files/file/4279-kext-utility-latest-version/) and everything works. This card is supported by Clover natively.
 1. Harddisk bus can be changed from IDE to SATA w/o problem, but not SCSI, and there is no virtio disk driver usable under OSX, so the disk I/O performance is not optimal.
