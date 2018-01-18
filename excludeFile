@@ -1,0 +1,3 @@
+*.findresult
+*.sw[a-z]
+.git
