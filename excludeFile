@@ -1,3 +1,5 @@
 *.findresult
 *.sw[a-z]
 .git
+HighSierra-10.13.2.iso
+mac_hdd.img
