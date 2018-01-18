@@ -5,7 +5,7 @@ cd "$SCRIPTPATH"
 
 server="$1"
 dir="$2"
-rsync -aHvn --progress --delete \
+rsync -aHv --progress --delete \
     --exclude-from=./excludeFile \
     ./ \
     "$server":"$dir"
