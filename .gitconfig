@@ -1,0 +1,8 @@
+[remote "kholia"]
+    url = https://github.com/kholia/OSX-KVM.git
+    fetch = +refs/heads/*:refs/remotes/kholia/*
+[gsync]
+    remote = kholia
+    branch = master
+[merge]
+	allow = true
