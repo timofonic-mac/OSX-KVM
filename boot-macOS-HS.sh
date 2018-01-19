@@ -25,7 +25,7 @@ MY_OPTIONS="+aes,+xsave,+avx,+xsaveopt,avx2,+smep"
     -device ide-drive,bus=ide.2,drive=Clover \
     -drive id=Clover,if=none,snapshot=on,format=qcow2,file=./'Clover.qcow2' \
     -device ide-drive,bus=ide.1,drive=MacHDD \
-    -drive id=MacHDD,if=none,file=./mac_hdd.img,format=qcow2 \
+    -drive id=MacHDD,if=none,file=/media/volgrp/kvm/macos/mac_hdd.img,format=qcow2 \
     -device ide-drive,bus=ide.0,drive=MacDVD \
     -drive id=MacDVD,if=none,snapshot=on,media=cdrom,file=./'HighSierra-10.13.2.iso' \
     -netdev user,id=net0 -device e1000-82545em,netdev=net0,id=net0,mac=52:54:00:c9:18:27 \
